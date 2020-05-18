@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
 body {
+    height: 100%;
+    grid-template-rows: min-content min-content auto;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -101,6 +103,8 @@ aside article {
 
 footer {
     background-color: rgb(82, 26, 126);
+    grid-row: 3 / 4;
+    align-self: end;
 }
 
 footer article {

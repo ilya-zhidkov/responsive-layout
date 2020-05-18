@@ -14,6 +14,15 @@ header div.row {
     justify-content: space-between;
 }
 
+#toggle {
+    display: none;
+}
+
+.expand {
+    display: block !important;
+    width: 100%;
+}
+
 nav ul > li {
     background-color: rgb(111, 169, 215);
     padding: 1rem 1.5rem;
@@ -115,4 +124,67 @@ footer article {
 
 footer article:hover {
     background-color: rgb(170, 11, 93);
+}
+
+@media screen and (max-width: 768px) {
+    header nav {
+        display: none;
+    }
+
+    header div.row {
+        flex-wrap: wrap;
+    }
+
+    nav ul.row {
+        flex-wrap: wrap;
+        margin-top: -1px;
+    }
+
+    nav ul > li {
+        text-align: center;
+        flex: 1 1 100%;
+    }
+
+    nav ul > :not(:last-child) {
+        border-bottom: 1px solid rgba(11, 91, 175, 0.2);
+    }
+
+    nav ul > li > a {
+        display: block;
+        width: 100%;
+    }
+
+    #toggle {
+        display: block;
+        background-color: rgb(111, 169, 215);
+        padding: 0.8rem;
+    }
+
+    .container {
+        max-width: 620px;
+    }
+
+    div.container {
+        grid-template-columns: 1fr;
+    }
+
+    main > section:first-child {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    aside {
+        margin: 1.5rem 0 0 0;
+    }
+
+    aside article {
+        height: 175px;
+    }
+
+    footer section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    footer article:last-child {
+        grid-column: 1 / 3;
+    }
 }

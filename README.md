@@ -8,7 +8,12 @@ A guideline for designing modern web pages with Flexbox and CSS Grid.
 
 ## Setup
 
-1. Clone or download repository.
+1. Clone or download repository
+   
+    ```bash
+    git clone https://github.com/ilya-zhidkov/responsive-layout.git
+    ```
+
 2. Open `index.html` file using either local or file server.
 
 ---

@@ -116,6 +116,10 @@ footer {
     align-self: end;
 }
 
+footer > div.container > section {
+    margin-bottom: 0;
+}
+
 footer article {
     height: 150px;
     background-color: rgba(255, 255, 255, 0.5);

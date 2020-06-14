@@ -1,3 +1,10 @@
+:root {
+    --color-primary: #ffffff;
+
+    --spacing-base: 1rem;
+    --spacing-medium: 1.5rem;
+}
+
 * {
 	margin: 0;
     padding: 0;
@@ -8,19 +15,31 @@ html {
     height: 100%;
 }
 
-ul {
-    list-style: none;
+a {
+    color: var(--color-primary);
+    text-decoration: none;
 }
 
-a {
-    color: #fff;
-    text-decoration: none;
+article {
+    position: relative;
+    width: auto;
+    height: 175px;
+    color: var(--color-primary);
+    font-size: 2rem;
+}
+
+article:hover {
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 1rem;
+    padding: var(--spacing-base);
 }
 
 .row {
@@ -38,4 +57,13 @@ a {
 
 .grid {
     display: grid;
+}
+
+#toggle {
+    display: none;
+}
+
+.expand {
+    display: block !important;
+    width: 100%;
 }
